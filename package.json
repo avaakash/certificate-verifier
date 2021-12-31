@@ -1,0 +1,28 @@
+{
+  "name": "certificate-verfier",
+  "version": "1.0.0",
+  "description": "verifies certificates using a unique code",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avaakash/certificate-verifier.git"
+  },
+  "keywords": [
+    "certificate",
+    "js",
+    "nodejs",
+    "verifier"
+  ],
+  "author": "avaakash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avaakash/certificate-verifier/issues"
+  },
+  "homepage": "https://github.com/avaakash/certificate-verifier#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
