@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title><%= title %></title>
+    </head>
+    <body>
+        <a href="/certificate/create">Create Certificate</a>
+        <a href="/certificate/check">Verify Certificate</a>
+        <h1>All Certificates</h1>
+        <% certificates.forEach((certificate) => {%>
+            <div>
+                <p>Certificate ID: <%= certificate._id %></p>
+                <p>Name: <%= certificate.name %></p>
+                <p>Event: <%= certificate.event %></p>
+                <p>Organisation: <%= certificate.organisation %></p>
+                <br />
+            </div>
+        <% }) %>
+    </body>
+</html>

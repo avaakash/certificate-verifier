@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title><%= title %></title>
+    </head>
+    <body>
+        <h1>Verify Certificate</h1>
+        <label for="name">ID:</label>
+        <input type="text" name="id" id="certificateId" />        
+        
+        <button id="submit" type="submit">Submit</button>
+        
+        <script>
+            var submit = document.getElementById('submit');
+            submit.addEventListener('click', function(event) {
+                event.preventDefault();
+                var certificateId = document.getElementById('certificateId').value;
+                var url = '/certificate/verify/' + certificateId;
+                window.location.href = url;
+            });
+        </script>
+    </body>
+</html>

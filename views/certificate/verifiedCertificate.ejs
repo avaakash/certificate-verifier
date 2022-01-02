@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title><%= title %></title>
+    </head>
+    <body>
+        <h1>Certificate Verified</h1>
+        <div>
+            <p>Certificate ID: <%= certificate._id %></p>
+            <p>Name: <%= certificate.name %></p>
+            <p>Event: <%= certificate.event %></p>
+            <p>Organisation: <%= certificate.organisation %></p>
+
+            <br />
+            <a href="/certificate/verify">Verify Another Certificate</a>
+        </div>
+    </body>
+</html>
